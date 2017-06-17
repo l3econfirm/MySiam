@@ -59,6 +59,8 @@
 
 
             <EditText
+                android:textColorHint="@color/colorPrimaryLight"
+                android:textColor="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/user" />
@@ -78,6 +80,8 @@
 
 
             <EditText
+                android:textColorHint="@color/colorPrimaryLight"
+                android:textColor="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/pass" />
