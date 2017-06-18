@@ -4,4 +4,6 @@
     <string name="login">Login</string>
     <string name="user">User</string>
     <string name="pass">pass</string>
+    <string name="register">Register</string>
+    <string name="name">name</string>
 </resources>
