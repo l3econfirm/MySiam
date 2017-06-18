@@ -59,6 +59,7 @@
 
 
             <EditText
+                android:id="@+id/editUser"
                 android:textColorHint="@color/colorPrimaryLight"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
@@ -80,6 +81,7 @@
 
 
             <EditText
+                android:id="@+id/editPass"
                 android:textColorHint="@color/colorPrimaryLight"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
@@ -90,6 +92,8 @@
         </LinearLayout>
 
         <TextView
+            android:clickable="true"
+            android:id="@+id/txtRegister"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/h2"
             android:text="register"
@@ -99,6 +103,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -106,4 +111,4 @@
         android:text="@string/login"
         android:textColor="@color/textColorPrimary" />
 
-</>
+</RelativeLayout>
