@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText userEditText, passwordEditText;
     private TextView textView;
     private Button button;
+    private String userString, passwordString;
 
 
     @Override
@@ -27,8 +28,30 @@ public class MainActivity extends AppCompatActivity {
         //Textview Controlled
         textviewControlled();
 
+        //Button Controlled
+        buttonControlled();
+
 
     } //method Main
+
+    private void buttonControlled() {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Get Value From Edit Text
+                userString = userEditText.getText().toString().trim();
+                passwordString = passwordEditText.getText().toString();
+
+                //Check Space
+                if (userString.length()==0 || passwordString.length() ==0) {
+
+                } else {
+                }
+
+            }
+        });
+    }
 
     private void textviewControlled() {
         textView.setOnClickListener(new View.OnClickListener() {

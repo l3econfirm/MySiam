@@ -59,6 +59,7 @@
 
 
             <EditText
+                android:inputType="text"
                 android:id="@+id/editUser"
                 android:textColorHint="@color/colorPrimaryLight"
                 android:textColor="@color/colorPrimaryDark"
@@ -81,6 +82,7 @@
 
 
             <EditText
+                android:inputType="textPassword"
                 android:id="@+id/editPass"
                 android:textColorHint="@color/colorPrimaryLight"
                 android:textColor="@color/colorPrimaryDark"
