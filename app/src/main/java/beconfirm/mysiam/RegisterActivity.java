@@ -2,6 +2,7 @@ package beconfirm.mysiam;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,13 +53,33 @@ public class RegisterActivity extends AppCompatActivity {
                     myalert.myDialog("Have space", "Please Fill");
                 } else {
                     //no space
-
+                    uploadValuetoServer();
                 }
 
-
-
             }
+
+
         });
+    }
+
+    private void uploadValuetoServer() {
+
+        try {
+            PostDataToServer postDataToServer = new PostDataToServer(RegisterActivity.this);
+            postDataToServer.execute(nameString,userString,passwordString,
+                    "http://androidthai.in.th/siam/addDataMaster.php");
+            if (Boolean.parseBoolean(postDataToServer.get())) {
+                finish();
+            } else {
+                Myalert myalert = new Myalert(RegisterActivity.this);
+                myalert.myDialog("cannot Upload", "Please Try Again");
+            }
+
+
+        }catch (Exception e){
+            Log.d("siamV1", "e upload ===" + e.toString());
+
+        }
     }
 
     private void backController() {
