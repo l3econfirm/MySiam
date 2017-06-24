@@ -6,4 +6,13 @@
     <string name="pass">pass</string>
     <string name="register">Register</string>
     <string name="name">name</string>
+
+    <!--for dialog-->
+    <string name="titleHaveSpace">ช่องว่างโว้ย</string>
+    <string name="messageHaveSpace">กรอกสิทุกช่องอะ</string>
+    <string name="titleUserFalse">User False</string>
+    <string name="messageUserFalse">ไม่มี User</string>
+    <string name="titlePasswordFalse">Pass ผิด</string>
+    <string name="messagePasswordFalse">ลองใหม่ Pass ผิด</string>
+
 </resources>
